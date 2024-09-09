@@ -54,6 +54,11 @@ header {
   color: #fff;
 }
 
+#landing-page i {
+  margin-top: 6rem;
+  color: white;
+}
+
 /* ABOUT */
 
 #about-title {
@@ -120,6 +125,11 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+}
+
+#artwork-page i {
+  margin-top: 6rem;
+  color: white;
 }
 
 /* Container for each artwork */
