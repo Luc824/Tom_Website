@@ -1,146 +1,180 @@
 /* GENERAL */
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
 }
 
 /* LANDING PAGE */
 
 #landing-page {
-    background-image: url(assets/artwork\ 5.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(assets/artwork\ 5.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-size: 120%;
+  background-repeat: no-repeat;
 }
 
 header {
-    padding: 50px;
-
+  padding: 50px;
 }
 
-#contact-link, #about-link, #artwork-link, #homepage-link {
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    padding: 50px;
-    font-size: 32px;
+#contact-link,
+#about-link,
+#artwork-link,
+#homepage-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  padding: 50px;
+  font-size: 32px;
 }
 
-#contact-link:hover, #about-link:hover, #artwork-link:hover, #homepage-link:hover {
-    color: rgb(68, 68, 68);
-    text-decoration: underline;
+#contact-link:hover,
+#about-link:hover,
+#artwork-link:hover,
+#homepage-link:hover {
+  color: rgb(0, 0, 0);
+  text-decoration: underline;
+  text-underline-offset: 0.4rem;
 }
 
 #title {
-    padding: 25vh;
-    font-size: 128px;
+  padding: 25vh;
+  font-size: 128px;
+  color: #fff;
 }
 
 /* ABOUT */
 
 #about-title {
-    font-size: 48px;
-    padding: 50px;
+  font-size: 48px;
+  padding: 50px;
 }
 
 #about-section {
-    height: 100vh;
-    display: flex;
-    padding: 0 200px 0 200px;
-    justify-content: center;
+  height: 100vh;
+  display: flex;
+  padding: 0 200px 0 200px;
+  justify-content: center;
 }
 
 #about-text {
-    font-size: 36px;
-    width: 622px;
-    height: 634px;
-    text-align: left;
-    padding-right: 100px;
+  font-size: 1.3rem;
+  font-family: inter;
+  width: 622px;
+  height: 634px;
+  text-align: left;
+  padding-right: 200px;
 }
 
 #about-img {
-    width: 400px;
-    height: 700px;
-    padding-left: 100px;
+  width: auto;
+  height: 700px;
+  padding-bottom: 20px;
 }
 
 /* CONTACT */
 
 #contact-title {
-    font-size: 48px;
-    padding: 50px;
+  font-size: 48px;
+  padding: 50px;
 }
 
 #contact-section {
-    height: 60vh;
-    font-size: 32px;
+  height: 100vh;
+  font-size: 32px;
 }
 
-#email-link, #instagram-link {
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    font-size: 32px;
+#contact-section a {
+  color: black;
 }
 
-#email-link:hover, #instagram-link:hover {
-    text-decoration: underline;
+#email-link,
+#instagram-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  font-size: 32px;
+}
+
+#email-link:hover,
+#instagram-link:hover {
+  text-decoration: underline;
 }
 
 /* ARTWORK PAGE */
 
 #artwork-page {
-    background-image: url(assets/artwork\ 8.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(assets/artwork\ 8.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
-
 
 /* Container for each artwork */
 .artwork {
-    position: relative;
-    display: block;
-    margin: 10px auto;
-    width: 600px;
-    height: auto;
+  position: relative;
+  display: block;
+  margin: 10px auto;
+  width: 600px;
+  height: auto;
 }
 
 /* Image styling */
 .artwork img {
-    display: inline-block;
-    width: 100%;
-    height: auto;
+  display: inline-block;
+  width: 100%;
+  height: auto;
 }
 
 /* Hover effect on artwork container */
 .artwork:hover img {
-    filter: brightness(40%);
+  filter: brightness(40%);
 }
 
 /* Text to show on hover, centered */
 .artwork span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    padding: 10px;
-    display: none;
-    text-align: center;
-    font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 10px;
+  display: none;
+  text-align: center;
+  font-size: 24px;
 }
 
 /* Show text on hover */
 .artwork:hover span {
-    display: block;
+  display: block;
 }
 
+#the-viewers-condition {
+  display: flex;
+  justify-content: space-around;
+}
+
+.align {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+#art-1,
+#art-2,
+#art-3 {
+  height: 360px;
+}
