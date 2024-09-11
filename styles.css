@@ -199,21 +199,6 @@ header {
   width: calc(50% - 10px);
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .artwork,
-  #the-viewers-condition .artwork,
-  .align .artwork {
-    width: 100%;
-    margin: 10px 0;
-  }
-
-  #the-viewers-condition,
-  .align {
-    flex-direction: column;
-  }
-}
-
 #art-1-1,
 #art-1-2,
 #art-1-3 {
