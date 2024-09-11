@@ -64,12 +64,18 @@ header {
 #about-title {
   font-size: 48px;
   padding: 50px;
+  text-align: center;
 }
 
 #about-section {
-  height: 100vh;
   display: flex;
-  padding: 0 200px 0 200px;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 200px 60px 200px;
+}
+
+#about-content {
+  display: flex;
   justify-content: center;
 }
 
@@ -77,7 +83,7 @@ header {
   font-size: 1.3rem;
   font-family: inter;
   width: 622px;
-  height: 634px;
+  height: atuo;
   text-align: left;
   padding-right: 200px;
 }
@@ -85,7 +91,6 @@ header {
 #about-img {
   width: auto;
   height: 700px;
-  padding-bottom: 20px;
 }
 
 /* CONTACT */
@@ -125,25 +130,27 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  background-repeat: no-repeat;
 }
 
-#artwork-page i {
-  margin-top: 6rem;
-  color: white;
+#artworks {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* Container for each artwork */
 .artwork {
   position: relative;
-  display: block;
-  margin: 10px auto;
-  width: 600px;
-  height: auto;
+  display: inline-block;
+  margin: 10px;
+  width: calc(50% - 20px);
+  vertical-align: top;
 }
 
 /* Image styling */
 .artwork img {
-  display: inline-block;
+  display: block;
   width: 100%;
   height: auto;
 }
@@ -173,18 +180,49 @@ header {
 
 #the-viewers-condition {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#the-viewers-condition .artwork {
+  width: calc(33.33% - 20px);
 }
 
 .align {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  margin: 10px;
+  margin: 10px 0;
+}
+
+.align .artwork {
+  width: calc(50% - 10px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .artwork,
+  #the-viewers-condition .artwork,
+  .align .artwork {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  #the-viewers-condition,
+  .align {
+    flex-direction: column;
+  }
 }
 
 #art-1,
 #art-2,
 #art-3 {
   height: 360px;
+}
+
+/* New rule for single artworks */
+.artwork-single .artwork {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
 }

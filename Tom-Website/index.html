@@ -20,6 +20,34 @@
       src="https://kit.fontawesome.com/0439c7d6ec.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const aboutLink = document.getElementById("about-link");
+        const contactLink = document.getElementById("contact-link");
+
+        function smoothScroll(targetId) {
+          const target = document.getElementById(targetId);
+          if (target) {
+            const targetPosition =
+              target.getBoundingClientRect().top + window.pageYOffset;
+            window.scrollTo({
+              top: targetPosition,
+              behavior: "smooth",
+            });
+          }
+        }
+
+        aboutLink.addEventListener("click", function (e) {
+          e.preventDefault();
+          smoothScroll("about-section");
+        });
+
+        contactLink.addEventListener("click", function (e) {
+          e.preventDefault();
+          smoothScroll("contact-section");
+        });
+      });
+    </script>
   </head>
   <body>
     <div id="landing-page">
@@ -32,34 +60,36 @@
       <i class="fa-solid fa-chevron-down"></i>
     </div>
 
-    <h2 id="about-title">About</h2>
     <div id="about-section">
-      <p id="about-text">
-        My practice contemplates the structures that shape our relationship with
-        art.<br /><br />
-        Drawing from the geometry of the surrounding environment offers an
-        opportunity to play with the harmony and balance of the space’s
-        architecture. I build asymmetrical shaped canvases often using found
-        materials intrigued by their previously imbued information. Shaped
-        paintings make the edges of the canvas more prevalent bringing a
-        sculptural aspect to the work. These edges help direct the composition
-        of the painiting’s structure, then I search to enrich the feel of the
-        surfaces layering opposing colours.<br /><br />
-        Central to my work is the consideration of display methods and the
-        viewers' experience. I find that using site-specific interventions such
-        as extruding walls, partitions and windows further activates the
-        viewer's position in relation to Painting, and enables me to disrupt,
-        criticise and question certain conventions. <br />
-        photography to record the semi-curated theatricality between space, art,
-        and people gives me reference for compositions. I reflect on a
-        contemporary viewing experience, progressively building a nuanced point
-        of view on the history and tradition of the white cube. <br /><br />
-        As a whole, my current body of work responds to the clinical aesthetics,
-        curatorial techniques and recurring actors of the contemporary art
-        world.
-      </p>
-
-      <img id="about-img" src="assets/about img 1.jpg" alt="Thomas Brewin" />
+      <h2 id="about-title">About</h2>
+      <div id="about-content">
+        <p id="about-text">
+          My practice contemplates the structures that shape our relationship
+          with art.<br /><br />
+          Drawing from the geometry of the surrounding environment offers an
+          opportunity to play with the harmony and balance of the space’s
+          architecture. I build asymmetrical shaped canvases often using found
+          materials intrigued by their previously imbued information. Shaped
+          paintings make the edges of the canvas more prevalent bringing a
+          sculptural aspect to the work. These edges help direct the composition
+          of the painiting’s structure, then I search to enrich the feel of the
+          surfaces layering opposing colours.<br /><br />
+          Central to my work is the consideration of display methods and the
+          viewers' experience. I find that using site-specific interventions
+          such as extruding walls, partitions and windows further activates the
+          viewer's position in relation to Painting, and enables me to disrupt,
+          criticise and question certain conventions. <br />
+          photography to record the semi-curated theatricality between space,
+          art, and people gives me reference for compositions. I reflect on a
+          contemporary viewing experience, progressively building a nuanced
+          point of view on the history and tradition of the white cube.
+          <br /><br />
+          As a whole, my current body of work responds to the clinical
+          aesthetics, curatorial techniques and recurring actors of the
+          contemporary art world.
+        </p>
+        <img id="about-img" src="assets/about img 1.jpg" alt="Thomas Brewin" />
+      </div>
     </div>
     <div>
       <img id="about-img" src="assets/about img 2.jpg" alt="Thomas Brewin" />
@@ -94,5 +124,7 @@
         ><i class="fa-regular fa-envelope"></i
       ></a>
     </div>
+
+    <!-- <script src="script.js"></script> -->
   </body>
 </html>
