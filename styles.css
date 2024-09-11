@@ -30,8 +30,7 @@ header {
 
 #contact-link,
 #about-link,
-#artwork-link,
-#homepage-link {
+#artwork-link {
   text-decoration: none;
   font-weight: bold;
   color: white;
@@ -41,8 +40,7 @@ header {
 
 #contact-link:hover,
 #about-link:hover,
-#artwork-link:hover,
-#homepage-link:hover {
+#artwork-link:hover {
   color: rgb(0, 0, 0);
   text-decoration: underline;
   text-underline-offset: 0.4rem;
@@ -171,6 +169,8 @@ header {
   display: none;
   text-align: center;
   font-size: 24px;
+  font-family: inter;
+  font-style: italic;
 }
 
 /* Show text on hover */
@@ -214,9 +214,9 @@ header {
   }
 }
 
-#art-1,
-#art-2,
-#art-3 {
+#art-1-1,
+#art-1-2,
+#art-1-3 {
   height: 360px;
 }
 
@@ -225,4 +225,30 @@ header {
   width: 100%;
   max-width: 600px;
   margin: 20px auto;
+}
+
+/* artowrk1 page */
+
+#contact-link,
+#about-link,
+#artwork-link {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  padding: 50px;
+  font-size: 32px;
+}
+
+/* Artwork1 page specific styles */
+.artwork-page-header #contact-link,
+.artwork-page-header #about-link,
+.artwork-page-header #artwork-link {
+  color: black;
+}
+
+/* New rule for hover on artwork1 page */
+.artwork-page-header #contact-link:hover,
+.artwork-page-header #about-link:hover,
+.artwork-page-header #artwork-link:hover {
+  color: #555; /* or any other color you prefer for hover state */
 }
