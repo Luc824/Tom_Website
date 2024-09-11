@@ -131,6 +131,11 @@ header {
   background-repeat: no-repeat;
 }
 
+#artwork-page i {
+  margin-top: 6rem;
+  color: black;
+}
+
 #artworks {
   max-width: 1800px;
   margin: 0 auto;
