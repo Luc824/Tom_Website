@@ -16,7 +16,7 @@ body {
 
 #landing-page {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(assets/artwork\ 5.jpg);
+    url(assets/artwork\ 3.1.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -126,7 +126,7 @@ header {
 
 #artwork-page {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(assets/artwork\ 8.jpg);
+    url(assets/artwork\ 5.jpg);
   background-size: cover;
   background-position: center;
   height: 100vh;
