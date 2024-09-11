@@ -54,9 +54,8 @@ header {
 }
 
 #landing-page i {
+  margin-bottom: 6rem;
   color: white;
-  font-size: 24px;
-  margin-bottom: 20px;
 }
 
 /* ABOUT */
@@ -130,9 +129,8 @@ header {
 }
 
 #artwork-page i {
+  margin-bottom: 6rem;
   color: black;
-  font-size: 24px;
-  margin-bottom: 20px;
 }
 
 #artworks {
