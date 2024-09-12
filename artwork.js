@@ -4,8 +4,6 @@ const artworks = [
     title: "The Viewer's Condition",
     images: [
       { src: "assets/artwork 1.1.jpg", alt: "The Viewer's Condition - 1" },
-      { src: "assets/artwork 1.2.jpg", alt: "The Viewer's Condition - 2" },
-      { src: "assets/artwork 1.3.jpg", alt: "The Viewer's Condition - 3" },
     ],
     link: "artwork1.html",
   },
@@ -24,10 +22,6 @@ const artworks = [
       {
         src: "assets/artwork 3.1.jpg",
         alt: "Terraforming the Gallery Space n°2",
-      },
-      {
-        src: "assets/artwork 3.2.jpg",
-        alt: "Terraforming the Gallery Space n°1",
       },
     ],
     link: "artwork3.html",
@@ -65,10 +59,7 @@ const artworks = [
   {
     id: 9,
     title: "Untitled",
-    images: [
-      { src: "assets/artwork 9.1.jpg", alt: "Untitled" },
-      { src: "assets/artwork 9.2.jpg", alt: "Untitled" },
-    ],
+    images: [{ src: "assets/artwork 9.1.jpg", alt: "Untitled" }],
     link: "artwork9.html",
   },
   {
@@ -86,19 +77,13 @@ const artworks = [
   {
     id: 12,
     title: "Blue Lines",
-    images: [
-      { src: "assets/artwork 12.1.jpg", alt: "Blue Lines 1" },
-      { src: "assets/artwork 12.2.jpg", alt: "Blue Lines 2" },
-    ],
+    images: [{ src: "assets/artwork 12.1.jpg", alt: "Blue Lines 1" }],
     link: "artwork12.html",
   },
   {
     id: 13,
     title: "Why me? Why them?",
-    images: [
-      { src: "assets/artwork 13.1.jpg", alt: "Why me?" },
-      { src: "assets/artwork 13.2.jpg", alt: "Why them?" },
-    ],
+    images: [{ src: "assets/artwork 13.1.jpg", alt: "Why me?" }],
     link: "artwork13.html",
   },
   {

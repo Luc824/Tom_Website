@@ -20,14 +20,10 @@
       src="https://kit.fontawesome.com/0439c7d6ec.js"
       crossorigin="anonymous"
     ></script>
+    <script src="header.js"></script>
   </head>
   <body>
     <div id="artwork-page">
-      <header>
-        <a id="artwork-link" href="artwork.html">Artwork</a>
-        <a id="about-link" href="index.html#about-title">About</a>
-        <a id="contact-link" href="index.html#contact-title">Contact</a>
-      </header>
       <h1 id="title">Artwork</h1>
       <i class="fa-solid fa-chevron-down"></i>
     </div>
@@ -39,43 +35,24 @@
     <script src="artwork.js"></script>
     <script>
       function createArtworkElement(artwork) {
-        const section = document.createElement("section");
-        section.id =
-          artwork.images.length > 1
-            ? `artwork-${artwork.id}`
-            : "artwork-single";
-        section.className = artwork.images.length > 1 ? "align" : "artwork";
+        const div = document.createElement("div");
+        div.className = "artwork";
 
-        artwork.images.forEach((image, index) => {
-          const div = document.createElement("div");
-          div.className = "artwork";
+        const a = document.createElement("a");
+        a.href = artwork.link;
 
-          const a = document.createElement("a");
-          a.href = artwork.link;
+        const img = document.createElement("img");
+        img.src = artwork.images[0].src; // Always use the first image
+        img.alt = artwork.images[0].alt;
 
-          const img = document.createElement("img");
-          img.id = `art-${artwork.id}${
-            artwork.images.length > 1 ? `-${index + 1}` : ""
-          }`;
-          img.src = image.src;
-          img.alt = image.alt;
+        a.appendChild(img);
+        div.appendChild(a);
 
-          a.appendChild(img);
-          div.appendChild(a);
+        const span = document.createElement("span");
+        span.textContent = artwork.title;
+        div.appendChild(span);
 
-          const span = document.createElement("span");
-          if (artwork.images.length > 1 && artwork.title.includes(" ")) {
-            const words = artwork.title.split(" ");
-            span.textContent = words[Math.min(index, words.length - 1)];
-          } else {
-            span.textContent = artwork.title;
-          }
-          div.appendChild(span);
-
-          section.appendChild(div);
-        });
-
-        return section;
+        return div;
       }
 
       const artworksSection = document.getElementById("artworks");
