@@ -19,6 +19,7 @@ body {
     url(assets/artwork\ 3.1.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed; /* Add this line */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -203,6 +204,7 @@ header {
   background-position: center;
   height: 100vh;
   background-repeat: no-repeat;
+  background-attachment: fixed; /* Add this line */
 }
 
 #artworks {
@@ -342,6 +344,7 @@ header {
     url(assets/artwork\ 3.1.jpg);
   background-size: cover;
   background-position: center;
+  background-attachment: fixed; /* Add this line */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -443,4 +446,14 @@ header {
 #landing-page i,
 #artwork-page i {
   margin-bottom: 0;
+}
+
+/* Add this media query for mobile devices */
+@media (max-width: 767px) {
+  #landing-page {
+    background-attachment: scroll; /* Change to scroll on mobile */
+  }
+  #artwork-page {
+    background-attachment: scroll; /* Change to scroll on mobile for both pages */
+  }
 }
